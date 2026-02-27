@@ -58,6 +58,7 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 11;
             this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -155,6 +156,7 @@
             this.user_showPass.TabIndex = 16;
             this.user_showPass.Text = "Show Password";
             this.user_showPass.UseVisualStyleBackColor = false;
+            this.user_showPass.CheckedChanged += new System.EventHandler(this.user_showPass_CheckedChanged);
             // 
             // btnUserLogin
             // 
@@ -165,6 +167,7 @@
             this.btnUserLogin.TabIndex = 17;
             this.btnUserLogin.Text = "Login";
             this.btnUserLogin.UseVisualStyleBackColor = false;
+            this.btnUserLogin.Click += new System.EventHandler(this.btnUserLogin_Click);
             // 
             // linkToAdmin
             // 
@@ -177,6 +180,7 @@
             this.linkToAdmin.TabIndex = 18;
             this.linkToAdmin.TabStop = true;
             this.linkToAdmin.Text = "Admin";
+            this.linkToAdmin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToAdmin_LinkClicked);
             // 
             // pictureBox3
             // 
@@ -212,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "User_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

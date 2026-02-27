@@ -129,6 +129,7 @@
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // pictureBox3
             // 
@@ -179,6 +180,7 @@
             this.btnUsers.TabIndex = 2;
             this.btnUsers.Text = "Users";
             this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // pictureBox1
             // 
@@ -204,6 +206,7 @@
             this.btnBooks.TabIndex = 0;
             this.btnBooks.Text = "Books";
             this.btnBooks.UseVisualStyleBackColor = false;
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
             // 
             // panel2
             // 
@@ -226,6 +229,7 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 25;
             this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox6
             // 
@@ -263,11 +267,11 @@
             // 
             this.lblTotalBooks.AutoSize = true;
             this.lblTotalBooks.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalBooks.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalBooks.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalBooks.ForeColor = System.Drawing.Color.White;
             this.lblTotalBooks.Location = new System.Drawing.Point(43, 184);
             this.lblTotalBooks.Name = "lblTotalBooks";
-            this.lblTotalBooks.Size = new System.Drawing.Size(127, 29);
+            this.lblTotalBooks.Size = new System.Drawing.Size(145, 32);
             this.lblTotalBooks.TabIndex = 36;
             this.lblTotalBooks.Text = "Total Stock";
             // 
@@ -275,11 +279,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(47, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 29);
+            this.label2.Size = new System.Drawing.Size(138, 32);
             this.label2.TabIndex = 35;
             this.label2.Text = "Book Stock";
             // 
@@ -308,11 +312,11 @@
             // 
             this.lblTotalAmount.AutoSize = true;
             this.lblTotalAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalAmount.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAmount.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalAmount.ForeColor = System.Drawing.Color.White;
             this.lblTotalAmount.Location = new System.Drawing.Point(38, 186);
             this.lblTotalAmount.Name = "lblTotalAmount";
-            this.lblTotalAmount.Size = new System.Drawing.Size(143, 29);
+            this.lblTotalAmount.Size = new System.Drawing.Size(164, 32);
             this.lblTotalAmount.TabIndex = 36;
             this.lblTotalAmount.Text = "Total Amount";
             // 
@@ -320,11 +324,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(64, 15);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 29);
+            this.label5.Size = new System.Drawing.Size(96, 32);
             this.label5.TabIndex = 35;
             this.label5.Text = "Amount";
             // 
@@ -353,11 +357,11 @@
             // 
             this.lblTotalUsers.AutoSize = true;
             this.lblTotalUsers.BackColor = System.Drawing.Color.Transparent;
-            this.lblTotalUsers.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalUsers.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalUsers.ForeColor = System.Drawing.Color.White;
             this.lblTotalUsers.Location = new System.Drawing.Point(42, 181);
             this.lblTotalUsers.Name = "lblTotalUsers";
-            this.lblTotalUsers.Size = new System.Drawing.Size(128, 29);
+            this.lblTotalUsers.Size = new System.Drawing.Size(145, 32);
             this.lblTotalUsers.TabIndex = 36;
             this.lblTotalUsers.Text = "Total Users";
             // 
@@ -365,11 +369,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(79, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 29);
+            this.label7.Size = new System.Drawing.Size(77, 32);
             this.label7.TabIndex = 35;
             this.label7.Text = "Users";
             // 
@@ -430,6 +434,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

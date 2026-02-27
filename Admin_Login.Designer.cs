@@ -60,6 +60,7 @@
             this.linkToUser.TabIndex = 31;
             this.linkToUser.TabStop = true;
             this.linkToUser.Text = "User";
+            this.linkToUser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkToUser_LinkClicked);
             // 
             // btnClose
             // 
@@ -71,6 +72,7 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 24;
             this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -132,13 +134,14 @@
             // 
             // btnAdminLogin
             // 
-            this.btnAdminLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdminLogin.BackColor = System.Drawing.Color.Aqua;
             this.btnAdminLogin.Location = new System.Drawing.Point(423, 282);
             this.btnAdminLogin.Name = "btnAdminLogin";
             this.btnAdminLogin.Size = new System.Drawing.Size(218, 40);
             this.btnAdminLogin.TabIndex = 30;
             this.btnAdminLogin.Text = "Login";
             this.btnAdminLogin.UseVisualStyleBackColor = false;
+            this.btnAdminLogin.Click += new System.EventHandler(this.btnAdminLogin_Click);
             // 
             // admin_showPass
             // 
@@ -151,6 +154,7 @@
             this.admin_showPass.TabIndex = 29;
             this.admin_showPass.Text = "Show Password";
             this.admin_showPass.UseVisualStyleBackColor = false;
+            this.admin_showPass.CheckedChanged += new System.EventHandler(this.admin_showPass_CheckedChanged);
             // 
             // txtPassword
             // 
@@ -214,6 +218,7 @@
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "Admin_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
